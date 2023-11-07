@@ -15,8 +15,7 @@ const StoreProvider = ({ children }) => {
     fetchData();
   }, []);
 
-  const newLocal = (curses, setCourses, user, setUser);
-  return <StoreContext.Provider value={newLocal}>{children}</StoreContext.Provider>;
+  return <StoreContext.Provider value={{ curses, setCourses, user, setUser }}>{children}</StoreContext.Provider>;
 };
 
 export default StoreProvider;
